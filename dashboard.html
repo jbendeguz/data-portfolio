@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Jose Bendeguz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">JB</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="index.html#proyectos">Proyectos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <h1>Dashboard Interactivo</h1>
+            <p>Visualización de datos en tiempo real</p>
+            <div class="dashboard-filters">
+                <select id="filter-year" class="filter-select">
+                    <option value="all">Todos los años</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                <select id="filter-category" class="filter-select">
+                    <option value="all">Todas las categorías</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="usuarios">Usuarios</option>
+                    <option value="rendimiento">Rendimiento</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-total">1,248</div>
+                <div class="kpi-label">Total Registros</div>
+                <div class="kpi-trend positive">↑ 12.4%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-promedio">87.3%</div>
+                <div class="kpi-label">Cumplimiento</div>
+                <div class="kpi-trend positive">↑ 3.1%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-activos">342</div>
+                <div class="kpi-label">Activos</div>
+                <div class="kpi-trend negative">↓ 2.8%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-meta">94.2%</div>
+                <div class="kpi-label">Meta Alcanzada</div>
+                <div class="kpi-trend positive">↑ 5.7%</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card chart-wide">
+                <h3 class="chart-title">Evolución Mensual</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Distribución por Categoría</h3>
+                <canvas id="doughnutChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Comparativa por Período</h3>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-card chart-wide">
+                <h3 class="chart-title">Rendimiento por Área</h3>
+                <canvas id="radarChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Jose Bendeguz · Datos actualizados en tiempo real</p>
+    </footer>
+
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
