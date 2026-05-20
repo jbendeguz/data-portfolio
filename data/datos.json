@@ -1,0 +1,27 @@
+{
+    "kpis": {
+        "total_registros": { "valor": "1,248", "tendencia": "+12.4%", "positivo": true },
+        "cumplimiento":    { "valor": "87.3%", "tendencia": "+3.1%",  "positivo": true },
+        "activos":         { "valor": "342",   "tendencia": "-2.8%",  "positivo": false },
+        "meta_alcanzada":  { "valor": "94.2%", "tendencia": "+5.7%",  "positivo": true }
+    },
+    "evolucion_mensual": {
+        "etiquetas": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+        "real_2026": [65, 72, 68, 80, 87, 91, 88, 94, 89, 96, 92, 98],
+        "meta":      [75, 75, 80, 80, 85, 85, 90, 90, 90, 95, 95, 95]
+    },
+    "distribucion": {
+        "etiquetas": ["Categoría A", "Categoría B", "Categoría C", "Categoría D"],
+        "valores":   [35, 28, 22, 15]
+    },
+    "comparativa_trimestral": {
+        "etiquetas": ["Q1", "Q2", "Q3", "Q4"],
+        "anio_2025": [68, 74, 79, 83],
+        "anio_2026": [72, 85, 89, 94]
+    },
+    "rendimiento_areas": {
+        "etiquetas": ["Calidad", "Velocidad", "Eficiencia", "Innovación", "Satisfacción", "Cobertura"],
+        "actual":    [88, 76, 92, 65, 84, 79],
+        "objetivo":  [90, 85, 90, 80, 90, 85]
+    }
+}
